@@ -1,0 +1,28 @@
+{
+  "name": "authenticate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server-dev": "cross-env NODE_ENV=prod nodemon server/index.js",
+    "client-dev": "npm start --prefix client",
+    "start-dev": "nodemon app.js",
+    "test": "cross-env NODE_ENV=test mocha --timeout 5000 __tests__/server/**/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.3",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.12",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}
